@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pranav Cotton Company</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Consistent container and spacing */
+        .container {
+            max-width: 1200px;
+        }
+        section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .py-5 {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+        img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            image-rendering: high-quality;
+        }
+        .card img, .img-fluid {
+            transition: transform 0.3s ease;
+        }
+        .card:hover img {
+            transform: scale(1.05);
+        }
+        .bg-gray-50 {
+            background-color: #f8fafc;
+        }
+        .bg-gray-800 {
+            background-color: #1f2937;
+        }
+        .text-gray-300 {
+            color: #d1d5db;
+        }
+        .text-gray-800 {
+            color: #1f2937;
+        }
+        .fallback-gradient-nav {
+            background: linear-gradient(90deg, #6ee7b7, #5eead4, #22d3ee);
+        }
+        /* Navbar styling is shared in styles.css */
+        footer {
+            background-color: #1f2937 !important;
+            color: #ffffff !important;
+        }
+        footer .text-gray-300 {
+            color: #d1d5db !important;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #a7f3d0, #99f6e4, #a5f3fc);
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                url('c1.jpg'),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(255, 255, 255, 0.03) 2px,
+                    rgba(255, 255, 255, 0.03) 4px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(255, 255, 255, 0.03) 2px,
+                    rgba(255, 255, 255, 0.03) 4px
+                ),
+                radial-gradient(
+                    circle at 20% 50%,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    transparent 50%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    transparent 50%
+                ),
+                radial-gradient(
+                    circle at 40% 20%,
+                    rgba(255, 255, 255, 0.08) 0%,
+                    transparent 50%
+                );
+            background-size: cover, auto, auto, auto, auto, auto;
+            background-position: center, 0 0, 0 0, 0 0, 0 0, 0 0;
+            background-repeat: no-repeat, repeat, repeat, no-repeat, no-repeat, no-repeat;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .page-header > .container {
+            position: relative;
+            z-index: 1;
+        }
+        .who-we-are-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .who-we-are-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('c8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.45;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .who-we-are-card > * {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 shadow-lg fallback-gradient-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gray-800 text-xl" href="index.html">
+                <i class="fas fa-industry me-2"></i>Pranav Cotton Company
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-800 fw-semibold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-gray-800 fw-semibold" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-800 fw-semibold" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-gradient-to-br from-emerald-200 via-teal-200 to-cyan-200 text-gray-800 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">About Us</h1>
+                    <p class="lead">Learn more about Pranav Cotton Company and our mission</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow-lg bg-white p-5 who-we-are-card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-seedling mb-3" style="font-size: 64px; background: linear-gradient(135deg, #6ee7b7, #5eead4, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                            <h2 class="display-5 fw-bold text-gray-800 mb-4">Who We Are</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <p class="lead text-dark fw-semibold mb-4 text-center" style="color: #1f2937 !important;">
+                                    Pranav Cotton Company is a leading intermediary in the cotton trading industry.
+                                </p>
+                                <p class="text-dark fw-medium mb-4" style="color: #374151 !important;">
+                                    We specialize in connecting cotton producers with manufacturers, ensuring a seamless flow of quality cotton throughout the supply chain. Our company acts as a trusted bridge between farmers and textile industries, facilitating fair trade and maintaining the highest standards of quality.
+                                </p>
+                                <p class="text-dark fw-medium mb-0" style="color: #374151 !important;">
+                                    With years of experience in the cotton industry, we understand the unique needs of both suppliers and buyers. Our team is dedicated to providing reliable, efficient, and transparent intermediary services that benefit all parties involved.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission & Vision -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg bg-gradient-to-br from-emerald-100 to-teal-100 overflow-hidden">
+                        <img src="c2.jpg" alt="Our Mission" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-bullseye" style="font-size: 48px; background: linear-gradient(135deg, #6ee7b7, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                            </div>
+                            <h3 class="card-title text-center fw-bold text-gray-800 mb-3">Our Mission</h3>
+                            <p class="card-text text-muted text-center">
+                                To be the most trusted and reliable intermediary in the cotton trading industry, connecting producers with manufacturers while maintaining the highest standards of quality, transparency, and customer satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg bg-gradient-to-br from-teal-100 to-cyan-100 overflow-hidden">
+                        <img src="c1.jpg" alt="Our Vision" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-eye" style="font-size: 48px; background: linear-gradient(135deg, #5eead4, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                            </div>
+                            <h3 class="card-title text-center fw-bold text-gray-800 mb-3">Our Vision</h3>
+                            <p class="card-text text-muted text-center">
+                                To revolutionize the cotton trading industry in Maharashtra by creating a seamless, efficient, and transparent marketplace that benefits all stakeholders while promoting sustainable and ethical trading practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Values -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-gray-800 text-center mb-5">Our Core Values</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="value-card text-center p-4 bg-white rounded shadow-sm hover:shadow-lg transition">
+                                <i class="fas fa-handshake mb-3" style="font-size: 48px; background: linear-gradient(135deg, #6ee7b7, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                <h4 class="fw-bold mb-3">Trust & Integrity</h4>
+                                <p class="text-muted">We build lasting relationships based on transparency, and ethical business practices.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="value-card text-center p-4 bg-white rounded shadow-sm hover:shadow-lg transition">
+                                <i class="fas fa-award mb-3" style="font-size: 48px; background: linear-gradient(135deg, #5eead4, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                <h4 class="fw-bold mb-3">Quality Excellence</h4>
+                                <p class="text-muted">We maintain the highest standards of quality in every transaction and service we provide.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="value-card text-center p-4 bg-white rounded shadow-sm hover:shadow-lg transition">
+                                <i class="fas fa-users-cog mb-3" style="font-size: 48px; background: linear-gradient(135deg, #34d399, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                <h4 class="fw-bold mb-3">Customer Focus</h4>
+                                <p class="text-muted">Our customers are at the heart of everything we do, and their success is our success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow-lg bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 text-gray-800 overflow-hidden">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h3 class="fw-bold mb-3">
+                                        <i class="fas fa-map-marker-alt me-2"></i>Our Location
+                                    </h3>
+                                    <p class="lead mb-3">Ch. Sambhaji Nagar, Maharashtra</p>
+                                    <p class="mb-0">
+                                        Strategically located in the heart of Maharashtra's cotton belt, our location allows us to efficiently serve both cotton producers and manufacturers across the region. We are easily accessible and well-connected to major transportation networks.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <img src="c4.jpg" alt="Our Location" class="img-fluid rounded shadow" style="max-height: 200px; width: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What We Do -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-gray-800 text-center mb-5">What We Do</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <div class="icon-box bg-emerald-100 rounded-circle p-3">
+                                                <i class="fas fa-link" style="font-size: 24px; background: linear-gradient(135deg, #6ee7b7, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="fw-bold mb-2">Intermediary Services</h5>
+                                            <p class="text-muted">We connect cotton producers with textile manufacturers, facilitating smooth transactions and ensuring both parties benefit from fair trade practices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <div class="icon-box bg-teal-100 rounded-circle p-3">
+                                                <i class="fas fa-clipboard-check" style="font-size: 24px; background: linear-gradient(135deg, #5eead4, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="fw-bold mb-2">Quality Control</h5>
+                                            <p class="text-muted">We conduct thorough quality assessments to ensure that only premium-grade cotton reaches our clients, maintaining industry standards.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <div class="icon-box bg-emerald-100 rounded-circle p-3">
+                                                <i class="fas fa-file-contract" style="font-size: 24px; background: linear-gradient(135deg, #34d399, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="fw-bold mb-2">Contract Management</h5>
+                                            <p class="text-muted">We handle all contractual agreements, ensuring clear terms and conditions that protect the interests of all parties involved.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <div class="icon-box bg-cyan-100 rounded-circle p-3">
+                                                <i class="fas fa-chart-line" style="font-size: 24px; background: linear-gradient(135deg, #22d3ee, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 class="fw-bold mb-2">Market Insights</h5>
+                                            <p class="text-muted">We provide valuable market information and pricing insights to help our clients make informed business decisions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-5 mt-5 fallback-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-industry me-2"></i>Pranav Cotton Company
+                    </h5>
+                    <p class="text-gray-300">Your trusted intermediary for premium cotton supply and distribution services in Maharashtra.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-gray-300">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2 text-emerald-300"></i>
+                            Ch. Sambhaji Nagar, Maharashtra
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2 text-cyan-300"></i>
+                            pranavcottonco@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">Business Hours</h5>
+                    <ul class="list-unstyled text-gray-300">
+                        <li class="mb-2">Monday - Saturday: 10:00 AM - 7:00 PM</li>
+                        <li class="mb-2">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-gray-700">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-gray-300 mb-0">
+                        &copy;Pranav Cotton Company. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

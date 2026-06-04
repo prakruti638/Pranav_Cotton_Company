@@ -1,0 +1,77 @@
+/* Shared styles used across pages */
+
+/* Navbar: consistent look + reliable collapse behavior */
+nav.navbar,
+.navbar.bg-gradient-to-r,
+.navbar.fallback-gradient-nav {
+  background: linear-gradient(90deg, #6ee7b7, #5eead4, #22d3ee) !important;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1030;
+}
+
+nav .navbar-brand,
+nav .nav-link,
+nav .navbar-brand:hover,
+nav .nav-link:hover {
+  color: #1f2937 !important;
+}
+
+nav .navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+nav .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Prevent Bootstrap .active from looking "bigger" */
+nav .nav-link.active {
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+nav .navbar-toggler {
+  border-color: rgba(31, 41, 55, 0.5);
+}
+
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231f2937' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+nav.navbar .container {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.navbar #navbarNav.navbar-collapse {
+  display: none;
+}
+
+nav.navbar #navbarNav.navbar-collapse.show {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  nav.navbar #navbarNav.navbar-collapse {
+    display: flex !important;
+    visibility: visible !important;
+    flex-basis: auto;
+    flex-grow: 0;
+  }
+
+  nav.navbar .navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    margin-left: auto !important;
+    gap: 0.25rem;
+  }
+}
+
